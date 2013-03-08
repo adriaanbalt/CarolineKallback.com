@@ -1,4 +1,10 @@
 CarolineKallback.com
 ====================
 
-My wife's website.
+My wife's portfolio.
+
+Simplicity built in a few hours.
+
+Modernizr
+Respond JS
+Media Queries
