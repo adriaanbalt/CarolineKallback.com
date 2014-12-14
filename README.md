@@ -1,9 +1,9 @@
 
-# Boilerplate website
+# Caroline Kallback website
 
 ####Introduction
 
-This project creates a blank slate to build an AngularJS web app from scratch.
+Caroline Kallback's online portfolio
 
 #### Node Modules
 
