@@ -1,0 +1,24 @@
+<div class="title-screen">
+	<div class='instructions'>
+		<img class="bg" src="img/titles/titles-instructions.png">
+	</div>
+	<div class="selection hidden">
+		<div class="carousel clearfix">
+			<a class='control previous-button' ng-click="previousButton()">
+				<img src="img/titles/arrow-left.png">
+			</a>
+			<a class='control next-button' ng-click="nextButton()">
+				<img src="img/titles/arrow-right.png">
+			</a>
+			<div ng-repeat="title in titles" data-index="{{$index}}">
+				<div class="container">
+					<img class="logo" ng-src="{{ title.logo }}"/>
+					<img class="still" ng-src="{{ title.still }}"/>
+					<h3>{{ title.description }}</h3>
+				</div>
+			</div>
+		</div>
+		<a href="#/record" class='anchor' ng-click="record()"></a>
+		<img class="bg" src="img/titles/titles-selection.png">
+	</div>
+</div>

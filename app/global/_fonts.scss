@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'gatsbyflfregular';
+    src: url('fonts/gatsbyflf.eot');
+    src: url('fonts/gatsbyflf.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gatsbyflf.woff') format('woff'),
+         url('fonts/gatsbyflf.ttf') format('truetype'),
+         url('fonts/gatsbyflf.svg#gatsbyflfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gatsbyflfbold';
+    src: url('fonts/gatsbyflf-bold.eot');
+    src: url('fonts/gatsbyflf-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gatsbyflf-bold.woff') format('woff'),
+         url('fonts/gatsbyflf-bold.ttf') format('truetype'),
+         url('fonts/gatsbyflf-bold.svg#gatsbyflfbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gatsbyflfbold_italic';
+    src: url('fonts/gatsbyflf-bolditalic.eot');
+    src: url('fonts/gatsbyflf-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gatsbyflf-bolditalic.woff') format('woff'),
+         url('fonts/gatsbyflf-bolditalic.ttf') format('truetype'),
+         url('fonts/gatsbyflf-bolditalic.svg#gatsbyflfbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'market_decoregular';
+    src: url('fonts/market_deco.eot');
+    src: url('fonts/market_deco.eot?#iefix') format('embedded-opentype'),
+         url('fonts/market_deco.woff') format('woff'),
+         url('fonts/market_deco.ttf') format('truetype'),
+         url('fonts/market_deco.svg#market_decoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h2,h3 {
+    font-family:'market_decoregular', Arial, sans-serif;
+}
+p{
+    font-family:'market_decoregular', Arial, sans-serif;
+}
+body {
+    
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}

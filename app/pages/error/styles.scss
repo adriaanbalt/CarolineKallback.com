@@ -1,0 +1,150 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none;
+	font-family:'market_decoregular';
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+	text-transform:uppercase;
+	text-align: center;
+	background: #000;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+/* Portrait layout (default) */
+.wrapper {
+	width: 100%;
+	max-width: 768px;
+	height: 1024px;
+	overflow: hidden;
+	color: #fff;
+	position: relative;
+}
+.wrapper.montage {
+	width: 100%;
+	max-width: 1024px;
+	height: 768px;
+}
+.wrapper.montage .decoration {
+	display: none;
+}
+.wrapper.montage .decoration-square {
+	display: block;
+}
+.wrapper .decoration-square {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+.btn {
+	color: #000;
+	background: #FFF;
+	padding: .5em 1em;
+}
+
+video {
+	width: 100%;
+}
+.background { 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.background .decoration {
+	background: url("../img/decoration.png") 0 0 no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 6px;
+	left: -4px;
+	z-index: 2;
+}
+
+.background .bg {
+	background: url("../img/bg.jpg") 0 0 no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.valign {
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+	width: 1px;
+}
+.vcontent {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#deviceready {
+	height: 100%;
+}
+#deviceready > div {
+	height: 100%;
+}
+
+.error-screen {
+	background: transparent url('../img/Errorscreen.jpg') 0 0 no-repeat;
+}

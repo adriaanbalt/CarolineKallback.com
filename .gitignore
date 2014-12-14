@@ -1,0 +1,16 @@
+// Files
+.DS_Store
+npm-debug.log
+.project
+*.sublime-project
+*.sublime-workspace
+
+// Folders
+.tmp
+.svn
+.sass-cache
+/node_modules
+/dist
+.idea
+/app/assets/styles
+/app/assets/js
