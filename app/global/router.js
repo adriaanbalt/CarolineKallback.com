@@ -5,15 +5,15 @@ angular.module('carolinekallback', ['ngRoute'])
 	.config(function ($routeProvider, $locationProvider) {
 		$routeProvider
 			.when('/', {
-				templateUrl: 'js/home/view.html',
+				templateUrl: 'pages/home/view.html',
 				sectionName: "start"
 			})
-			.when('/:id', {
-				templateUrl: 'js/project/view.html',
-				sectionName: "titles"
-			})
+			// .when('/:id', {
+			// 	templateUrl: 'pages/project/view.html',
+			// 	sectionName: "titles"
+			// })
 			.when('/error', {
-				templateUrl: 'js/error/view.html',
+				templateUrl: 'pages/error/view.html',
 				sectionName: "error"
 			})
 			.otherwise({redirectTo: '/'});
