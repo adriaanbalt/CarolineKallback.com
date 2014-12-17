@@ -11,8 +11,12 @@
 * @param {Object} $interval interval angular function
 * @param {Object} $timeout timeout angular function
 */   
-angular.module('project')
-     .controller('CarouselController', ['$rootScope', '$scope', '$interval', '$timeout', function($rootScope, $scope, $interval, $timeout) {
+angular.module('carolinekallback')
+     .controller('CarouselController', ['$rootScope', '$scope', '$interval', '$timeout', 'HomeService', function($rootScope, $scope, $interval, $timeout, HomeService) {
+
+     HomeService.getAll( function( data ) {
+          // set carousel data
+     });
 
      var interval,
           list = [],
