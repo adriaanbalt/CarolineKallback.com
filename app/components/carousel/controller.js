@@ -18,6 +18,8 @@ angular.module('carolinekallback')
           // set carousel data
      });
 
+     console.log ( "CAROUSEL CONTROLLER" );
+
      var interval,
           list = [],
           currentSlide,
