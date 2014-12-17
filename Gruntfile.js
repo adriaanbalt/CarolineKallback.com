@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 		// Configurable App Directories
 		directory: {
 			app: 'app',
+			alt: 'app',
 			dist: 'dist',
 			root: ''
 		},
@@ -29,7 +30,7 @@ module.exports = function(grunt) {
 				files: [{
 					dot: true,
 					src: [
-						'<%= directory.dist %>/*',
+						'<%= directory.alt %>/*',
 						'<%= directory.app %>/assets/styles/*',
 						'<%= directory.app %>/assets/js/*'
 					]
@@ -46,7 +47,7 @@ module.exports = function(grunt) {
 					expand: true,
 					dot: true,
 					cwd: '<%= directory.app %>',
-					dest: '<%= directory.dist %>',
+					dest: '<%= directory.alt %>',
 					src: [
 						'*.{ico,png,txt,html}',
 						'.htaccess',
@@ -67,8 +68,8 @@ module.exports = function(grunt) {
 		// https://github.com/gruntjs/grunt-contrib-concat
 		concat: {
 			dist: {
-				src: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/assets/components/**/*.js'],
-				dest: '<%= directory.app %>/assets/js/<%= pkg.name %>.js',
+				src: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/components/**/*.js'],
+				dest: '<%= directory.alt %>/assets/js/<%= pkg.name %>.js',
 			},
 		},
 
@@ -102,7 +103,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			combine: {
 				files: {
-					'<%= directory.dist %>/assets/styles/<%= pkg.name %>.min.css': ['<%= directory.app %>/assets/styles/**/*.css']
+					'<%= directory.alt %>/assets/styles/<%= pkg.name %>.min.css': ['<%= directory.app %>/assets/styles/**/*.css']
 				}
 			}
 		},
@@ -114,7 +115,7 @@ module.exports = function(grunt) {
 			options: {
 				csslintrc: '.csslintrc'
 			},
-			src: ['<%= directory.dist %>/css/main.css','<%= directory.dist %>/css/print.css']
+			src: ['<%= directory.alt %>/css/main.css','<%= directory.alt %>/css/print.css']
 		},
 
 		// Uglify
@@ -126,7 +127,7 @@ module.exports = function(grunt) {
             },
 			dist: {
 				files: {
-					'<%= directory.dist %>/assets/js/<%= pkg.name %>.min.js': ['<%= directory.app %>/assets/js/<%= pkg.name %>.js']
+					'<%= directory.alt %>/assets/js/<%= pkg.name %>.min.js': ['<%= directory.app %>/assets/js/<%= pkg.name %>.js']
 				}
 			}
 		},
@@ -143,7 +144,7 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					open: true,
-					base: 'dist'
+					base: 'app'
 				}
 			}
 		},
@@ -154,21 +155,20 @@ module.exports = function(grunt) {
 		watch: {
 			js: {
 				files: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/components/**/*.js'],
-				tasks: ['concat:dist','uglify:dist'],
+				tasks: ['concat:dist'],
 				options: {
 					livereload: true
 				}
 			},
 			html: {
 				files: ['<%= directory.app %>/*.html', '<%= directory.app %>/pages/**/*.html'],
-				tasks: ['newer:copy:dist'],
 				options: {
 					livereload: true
 				}
 			},
 			styles: {
 				files: ['<%= directory.app %>/global/**/*.scss','<%= directory.app %>/components/**/*.scss','<%= directory.app %>/pages/**/*.scss'],
-				tasks: ['compass'],
+				tasks: ['compass','cssmin'],
 				options: {
 					livereload: true
 				}
@@ -193,19 +193,19 @@ module.exports = function(grunt) {
 	// Development grunt task
 	grunt.registerTask('dev', [
 		// Cleanup Previously Generated Files
-		'clean:dist',
+		// 'clean:dist',
 
-		// Concat
+		// Concat the JS
 		'concat:dist',
 
-		// Minify JS
-		'uglify:dist',
+		// // Minify JS
+		// 'uglify:dist',
 
-		// Sass compilation and sprite generation
+		// Sass compilation
 		'compass',
 
 		// Copy HTML and assets
-		'copy:dist',
+		// 'copy:dist',
 
 		// combine CSS files after complication
 		'cssmin',
