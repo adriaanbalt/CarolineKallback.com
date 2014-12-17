@@ -6,7 +6,7 @@ angular.module('carolinekallback', ['ngRoute'])
 		$routeProvider
 			.when('/', {
 				templateUrl: 'pages/home/view.html',
-				sectionName: "start"
+				sectionName: "home"
 			})
 			// .when('/:id', {
 			// 	templateUrl: 'pages/project/view.html',
@@ -17,4 +17,5 @@ angular.module('carolinekallback', ['ngRoute'])
 				sectionName: "error"
 			})
 			.otherwise({redirectTo: '/'});
+		$locationProvider.html5Mode( true );
 	});
