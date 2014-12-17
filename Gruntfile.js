@@ -54,7 +54,9 @@ module.exports = function(grunt) {
 						'assets/fonts/**/*',
 						'assets/img/**/*',
 						'assets/video/**/*',
-						'pages/**/*.html'
+						'pages/**/*.html',
+						'!global/**/*.html',
+						'!components/**/*.html'
 					]
 				}]
 			}
