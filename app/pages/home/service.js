@@ -11,8 +11,10 @@ angular.module('carolinekallback')
 
 		var config = {
 			method: "GET",
-			url: "data/data.json"
+			url: "assets/data/data.json"
 		};
+
+		console.log ( "HOME SERVICE" );
 
 		var HomeService = {},
 			data = [];
