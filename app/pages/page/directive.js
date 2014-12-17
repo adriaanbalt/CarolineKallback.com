@@ -5,7 +5,7 @@
  * @restrict C
  * @description
  */
-angular.module('project')
+angular.module('carolinekallback')
 	.directive('pageScreen', [function() {
 		return {
 			restrict: 'ECA',

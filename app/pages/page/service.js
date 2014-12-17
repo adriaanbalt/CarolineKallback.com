@@ -6,7 +6,7 @@
  * @description
  * 
  */
-angular.module('project')
+angular.module('carolinekallback')
 	.factory('pageService', ['$http', function($http) {
 
 		var config = {
