@@ -10,7 +10,7 @@
 * @param {Object} $scope scope of this element
 * @param {Object} $timeout timeout angular function
 */   
-angular.module('project')
+angular.module('carolinekallback')
      .controller('HeaderController', ['$rootScope', '$scope', '$timeout', function($rootScope, $scope, $timeout) {
 
      Header = {
