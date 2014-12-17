@@ -30,8 +30,24 @@ module.exports = function(grunt) {
 				files: [{
 					dot: true,
 					src: [
-						'<%= directory.alt %>/*',
+						// '<%= directory.alt %>/*',
 						'<%= directory.app %>/assets/styles/*',
+						'<%= directory.app %>/assets/js/*'
+					]
+				}]
+			},
+			styles: {
+				files: [{
+					dot: true,
+					src: [
+						'<%= directory.app %>/assets/styles/*'
+					]
+				}]
+			},
+			js: {
+				files: [{
+					dot: true,
+					src: [
 						'<%= directory.app %>/assets/js/*'
 					]
 				}]
@@ -155,7 +171,7 @@ module.exports = function(grunt) {
 		watch: {
 			js: {
 				files: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/components/**/*.js'],
-				tasks: ['concat:dist'],
+				tasks: ['clean:js','concat:dist'],
 				options: {
 					livereload: true
 				}
@@ -168,7 +184,7 @@ module.exports = function(grunt) {
 			},
 			styles: {
 				files: ['<%= directory.app %>/global/**/*.scss','<%= directory.app %>/components/**/*.scss','<%= directory.app %>/pages/**/*.scss'],
-				tasks: ['compass','cssmin'],
+				tasks: ['clean:styles','compass','cssmin'],
 				options: {
 					livereload: true
 				}
@@ -193,7 +209,7 @@ module.exports = function(grunt) {
 	// Development grunt task
 	grunt.registerTask('dev', [
 		// Cleanup Previously Generated Files
-		// 'clean:dist',
+		'clean:dist',
 
 		// Concat the JS
 		'concat:dist',
