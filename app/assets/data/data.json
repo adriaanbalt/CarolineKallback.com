@@ -1,3 +1,22 @@
-[
-	
-]
+{
+	"projects":[
+		{
+			"name":"Project 1",
+			"client":"",
+			"slug":"project_one",
+			"description":"Lorem ipsum dolar",
+			"thumbnail":""
+		},
+		{
+			"name":"Project 2",
+			"client":"",
+			"slug":"project_two",
+			"description":"Lorem ipsum dolar",
+			"thumbnail":""
+		}
+	],
+	"contact":{
+		"name":"Caroline Kallback",
+		"email":"CAROLINE.KALLBACK@gmail.com"
+	}
+}
