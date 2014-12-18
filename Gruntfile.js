@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 				files: [{
 					dot: true,
 					src: [
-						// '<%= directory.alt %>/*',
+						'<%= directory.dist %>/*',
 						'<%= directory.app %>/assets/styles/*',
 						'<%= directory.app %>/assets/js/*'
 					]
@@ -51,6 +51,14 @@ module.exports = function(grunt) {
 						'<%= directory.app %>/assets/js/*'
 					]
 				}]
+			},
+			json: {
+				files: [{
+					dot: true,
+					src: [
+						'<%= directory.app %>/assets/json/*'
+					]
+				}]
 			}
 		},
 
@@ -58,12 +66,31 @@ module.exports = function(grunt) {
 		// Copies files and folders
 		// https://github.com/gruntjs/grunt-contrib-copy
 		copy: {
-			dist: {
+			dev: {
 				files: [{
 					expand: true,
 					dot: true,
 					cwd: '<%= directory.app %>',
 					dest: '<%= directory.alt %>',
+					src: [
+						'*.{ico,png,txt,html}',
+						'.htaccess',
+						'assets/data/**/*',
+						'assets/fonts/**/*',
+						'assets/img/**/*',
+						'assets/video/**/*',
+						'pages/**/*.html',
+						'!global/**/*.html',
+						'!components/**/*.html'
+					]
+				}]
+			},
+			dist: {
+				files: [{
+					expand: true,
+					dot: true,
+					cwd: '<%= directory.app %>',
+					dest: '<%= directory.dist %>',
 					src: [
 						'*.{ico,png,txt,html}',
 						'.htaccess',
@@ -83,10 +110,14 @@ module.exports = function(grunt) {
 		// Concatenates JS from multiple files
 		// https://github.com/gruntjs/grunt-contrib-concat
 		concat: {
-			dist: {
+			dev: {
 				src: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/components/**/*.js'],
 				dest: '<%= directory.alt %>/assets/js/<%= pkg.name %>.js',
 			},
+			dist: {
+				src: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/components/**/*.js'],
+				dest: '<%= directory.dist %>/assets/js/<%= pkg.name %>.js',
+			}
 		},
 
 		// JSHint
@@ -117,11 +148,11 @@ module.exports = function(grunt) {
 		// Minifies css files
 		// https://github.com/gruntjs/grunt-contrib-cssmin
 		cssmin: {
-			combine: {
-				files: {
-					'<%= directory.alt %>/assets/styles/<%= pkg.name %>.min.css': ['<%= directory.app %>/assets/styles/**/*.css']
+				combine: {
+					files: {
+						'<%= directory.dist %>/assets/styles/<%= pkg.name %>.min.css': ['<%= directory.app %>/assets/styles/**/*.css']
+					}
 				}
-			}
 		},
 
 		// CssLint
@@ -141,9 +172,14 @@ module.exports = function(grunt) {
             options: {
                 mangle: false
             },
-			dist: {
+			dev: {
 				files: {
 					'<%= directory.alt %>/assets/js/<%= pkg.name %>.min.js': ['<%= directory.app %>/assets/js/<%= pkg.name %>.js']
+				}
+			},
+			dist: {
+				files: {
+					'<%= directory.dist %>/assets/js/<%= pkg.name %>.min.js': ['<%= directory.app %>/assets/js/<%= pkg.name %>.js']
 				}
 			}
 		},
@@ -157,10 +193,16 @@ module.exports = function(grunt) {
 				keepalive: true,
 				hostname: 'localhost'
 			},
-			dist: {
+			dev: {
 				options: {
 					open: true,
 					base: 'app'
+				}
+			},
+			dist: {
+				options: {
+					open: true,
+					base: 'dist'
 				}
 			}
 		},
@@ -188,6 +230,13 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true
 				}
+			},
+			json: {
+				files: ['<%= directory.app %>/assets/data/**/*.json'],
+				tasks: ['clean:json','newer:copy:dist'],
+				options: {
+					livereload: true
+				}
 			}
 		},
 
@@ -209,7 +258,10 @@ module.exports = function(grunt) {
 	// Development grunt task
 	grunt.registerTask('dev', [
 		// Cleanup Previously Generated Files
-		'clean:dist',
+		'clean:styles',
+
+		// Cleanup Previously Generated Files
+		'clean:js',
 
 		// Concat the JS
 		'concat:dist',
@@ -222,6 +274,33 @@ module.exports = function(grunt) {
 
 		// Copy HTML and assets
 		// 'copy:dist',
+
+		// combine CSS files after complication
+		'cssmin:dev',
+
+		// Ensure no CSS errors
+		'csslint',
+
+		// Runs both WATCH and CONNECT
+		'concurrent:dist'
+	]);
+
+	// Development grunt task
+	grunt.registerTask('prod', [
+		// Cleanup Previously Generated Files
+		'clean:dist',
+
+		// Concat the JS
+		'concat:dist',
+
+		// // Minify JS
+		'uglify:dist',
+
+		// Sass compilation
+		'compass',
+
+		// Copy HTML and assets
+		'copy:dist',
 
 		// combine CSS files after complication
 		'cssmin',
