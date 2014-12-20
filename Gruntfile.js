@@ -139,7 +139,7 @@ module.exports = function(grunt) {
 					javascriptDir: '<%= directory.app %>/assets/js',
 					fontsDir: '<%= directory.app %>/assets/fonts',
 					relativeAssets: false,
-					outputStyle: 'compressed'
+					outputStyle: 'expanded'
 				}
 			}
 		},
@@ -148,11 +148,11 @@ module.exports = function(grunt) {
 		// Minifies css files
 		// https://github.com/gruntjs/grunt-contrib-cssmin
 		cssmin: {
-				combine: {
-					files: {
-						'<%= directory.dist %>/assets/styles/<%= pkg.name %>.min.css': ['<%= directory.app %>/assets/styles/**/*.css']
-					}
+			combine: {
+				files: {
+					'<%= directory.dist %>/assets/styles/<%= pkg.name %>.min.css': ['<%= directory.app %>/assets/styles/**/*.css']
 				}
+			}
 		},
 
 		// CssLint
