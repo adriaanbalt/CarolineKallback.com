@@ -1,11 +1,11 @@
 .carousel {
 	position: relative;
-	display: block;
+	@include flexbox();
 	width: 100%;
 	li {
-		border-top: 1px solid #666;
+		padding: 1em;
+		border: 2px solid #666;
 		width: 100%;
-		display: flex;
 		z-index: 0;
 		position: absolute;
 		width: 100%;
