@@ -11,9 +11,14 @@
 * @param {Object} $timeout timeout angular function
 */   
 angular.module('carolinekallback')
-     .controller('GridController', ['$rootScope', '$scope', '$interval', '$timeout', function($rootScope, $scope, $interval, $timeout) {
+     .controller('GridController', ['$rootScope', '$scope', '$interval', '$timeout', 'HomeService', function($rootScope, $scope, $interval, $timeout, HomeService) {
 
      var interval;
+
+     HomeService.getAll( function( data ) {
+          $scope.grid = data.projects;
+          console.log ( '$scope.grid: ', $scope.grid );
+     });
 
      Grid = {
           /**
