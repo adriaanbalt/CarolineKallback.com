@@ -1,5 +1,5 @@
 <ul>
-	<li ng-repeat="item in carousel">
+	<li ng-repeat="item in carousel" ng-class='{current:$first}'>
 		<div class="inner">
 			<h2>{{ item.name }}</h2>
 			<p>{{ item.description }}</p>

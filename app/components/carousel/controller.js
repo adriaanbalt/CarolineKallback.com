@@ -38,7 +38,7 @@ angular.module('carolinekallback')
                angular.forEach( $scope.$slides, function(value, key){
                     list.push( new Slide( value, key ) );
                });
-               resize();
+               Carousel.resize();
                // if ( $scope.$slides.length > 1) {
                //      Carousel.autoplay();
                // }
