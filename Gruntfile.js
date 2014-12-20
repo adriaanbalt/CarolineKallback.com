@@ -80,8 +80,8 @@ module.exports = function(grunt) {
 						'assets/img/**/*',
 						'assets/video/**/*',
 						'pages/**/*.html',
-						'!global/**/*.html',
-						'!components/**/*.html'
+						'components/**/*.html',
+						'!global/**/*.html'
 					]
 				}]
 			},
@@ -99,8 +99,8 @@ module.exports = function(grunt) {
 						'assets/img/**/*',
 						'assets/video/**/*',
 						'pages/**/*.html',
-						'!global/**/*.html',
-						'!components/**/*.html'
+						'components/**/*.html',
+						'!global/**/*.html'
 					]
 				}]
 			}
@@ -219,7 +219,8 @@ module.exports = function(grunt) {
 				}
 			},
 			html: {
-				files: ['<%= directory.app %>/*.html', '<%= directory.app %>/pages/**/*.html'],
+				files: ['<%= directory.app %>/*.html', '<%= directory.app %>/pages/**/*.html', '<%= directory.app %>/components/**/*.html'],
+				tasks: ['newer:copy:dist'],
 				options: {
 					livereload: true
 				}
