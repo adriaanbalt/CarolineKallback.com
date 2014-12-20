@@ -1,5 +1,5 @@
 <ul>
-	<li ng-repeat="item in projects" ng-class='{current:$first}' class='{{ item.size }}'>
+	<li ng-repeat="item in grid" ng-class='{first:$first;last:$last;}' class='{{ item.size }}'>
 		<div class="inner">
 			<h2>{{ item.name }}</h2>
 			<p>{{ item.description }}</p>
