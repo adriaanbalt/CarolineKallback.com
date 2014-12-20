@@ -14,18 +14,16 @@
 angular.module('carolinekallback')
      .controller('CarouselController', ['$rootScope', '$scope', '$interval', '$timeout', 'HomeService', function($rootScope, $scope, $interval, $timeout, HomeService) {
 
-     HomeService.getAll( function( data ) {
-          // set carousel data
-     });
-
-     console.log ( "CAROUSEL CONTROLLER" );
-
      var interval,
           list = [],
           currentSlide,
           nextSlide,
           nextIndex = 0,
           pauseTime = 4500;
+
+     HomeService.getAll( function( data ) {
+          $scope.carousel = data.projects;
+     });
 
      Carousel = {
           /**
@@ -40,9 +38,21 @@ angular.module('carolinekallback')
                angular.forEach( $scope.$slides, function(value, key){
                     list.push( new Slide( value, key ) );
                });
+               resize();
                // if ( $scope.$slides.length > 1) {
                //      Carousel.autoplay();
                // }
+          },
+
+          /**
+          * @ngdoc function
+          * @name resize
+          * @methodOf project.carousel.controller:CarouselController
+          * @description
+          * resize the carousel containers
+          */
+          resize: function() {
+               $scope.$carousel
           },
 
           /**

@@ -1,3 +1,9 @@
 .carousel {
-	display: none;
+	display: block;
+	li {
+		border-top: 1px solid #666;
+		margin: 5px 0;
+		width: 100%;
+		display: flex;
+	}
 }
