@@ -1,0 +1,8 @@
+<ul>
+	<li ng-repeat="item in projects" ng-class='{current:$first}' class='{{ item.size }}'>
+		<div class="inner">
+			<h2>{{ item.name }}</h2>
+			<p>{{ item.description }}</p>
+		</div>
+	</li>
+</ul>
