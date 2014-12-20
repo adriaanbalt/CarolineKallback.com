@@ -12,10 +12,6 @@
 */	
 angular.module('carolinekallback')
 	.controller('HomeController', ['$scope', '$rootScope', '$location', 'HomeService', function($scope, $rootScope, $location, HomeService) {
-
-		HomeService.getAll( function( data ) {
-			// $scope.pages = data;
-			console.log ( 'homecontroller data: ', data );
-		});
+		
 
 	}]);

@@ -14,8 +14,6 @@ angular.module('carolinekallback')
 			url: "assets/data/data.json"
 		};
 
-		console.log ( "HOME SERVICE" );
-
 		var HomeService = {},
 			data = [];
 
@@ -29,7 +27,6 @@ angular.module('carolinekallback')
 		HomeService.getAll = function( cb ) {
 			$http(config).success(function( data ) {
 				data = data;
-				console.log ( "HomeService.getAll", data );
 				if ( cb ) {
 					cb( data );
 				}
