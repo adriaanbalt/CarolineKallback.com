@@ -1,104 +1,104 @@
 {
 	"projects":[
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 1",
-			"client":"",
-			"slug":"project_one",
-			"description":"Lorem ipsum dolar",
+			"id":"reel",
+			"size":"large",
+			"name":"REEL 2013",
+			"client":"Someone Client",
+			"slug":"reel-2013",
+			"description":"Reel contains various projects for <a href='www.trollback.com' target='_blank'>Trollback + Company</a> and friends.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/54822932"
 		},
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 2",
-			"client":"",
-			"slug":"project_two",
-			"description":"Lorem ipsum dolar",
+			"id":"modavanti",
+			"size":"small",
+			"name":"modavanti",
+			"client":"Modavanti",
+			"slug":"modavanti",
+			"description":"I directed, filmed, synced audio, and edited this video for <a href='http://modavanti.com/' target='_blank'>Modavanti</a>, a sustainable fashion webshop using <a href='http://www.adobe.com/products/premiere.html' target='_blank' class='app'>Adobe Premiere</a> and </br><a href='http://www.adobe.com/products/aftereffects.html' target='_blank' class='app'>Adobe After Effects</a>.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/52133989"
 		},
 		{
-			"id":"",
-			"size":"",
+			"id":"stop-motion",
+			"size":"small",
 			"name":"Project 3",
-			"client":"",
-			"slug":"project_three",
-			"description":"Lorem ipsum dolar",
+			"client":"Trollback",
+			"slug":"stop-motion",
+			"description":"Working freelance for <a href='www.trollback.com' target='_blank'>Trollback + Company</a>, I edited video for this montage showcasing clips taken with the stop motion timelapse app <a href='itunes.apple.com/us/app/step/id555780054?mt=8' target='_blank'>Step</a> using <a href='http://www.apple.com/finalcutpro/' target='_blank' class='app'>Final Cut Pro</a>.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/52091614"
 		},
 		{
-			"id":"",
-			"size":"",
+			"size":"nothing",
+			"size":"small",
 			"name":"Project 4",
-			"client":"",
+			"client":"Someone Client",
 			"slug":"project_four",
-			"description":"Lorem ipsum dolar",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/"
 		},
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 5",
-			"client":"",
+			"size":"nothing",
+			"size":"small",
+			"name":"ProjectName",
+			"client":"Someone Client",
 			"slug":"project_five",
-			"description":"Lorem ipsum dolar",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/"
 		},
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 5",
-			"client":"",
+			"size":"nothing",
+			"size":"small",
+			"name":"ProjectName",
+			"client":"Someone Client",
 			"slug":"project_five",
-			"description":"Lorem ipsum dolar",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/"
 		},
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 5",
-			"client":"",
+			"size":"nothing",
+			"size":"small",
+			"name":"ProjectName",
+			"client":"Someone Client",
 			"slug":"project_five",
-			"description":"Lorem ipsum dolar",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/"
 		},
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 5",
-			"client":"",
+			"size":"nothing",
+			"size":"small",
+			"name":"ProjectName",
+			"client":"Someone Client",
 			"slug":"project_five",
-			"description":"Lorem ipsum dolar",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/"
 		},
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 5",
-			"client":"",
+			"size":"nothing",
+			"size":"small",
+			"name":"ProjectName",
+			"client":"Someone Client",
 			"slug":"project_five",
-			"description":"Lorem ipsum dolar",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/"
 		},
 		{
-			"id":"",
-			"size":"",
-			"name":"Project 5",
-			"client":"",
+			"size":"nothing",
+			"size":"small",
+			"name":"ProjectName",
+			"client":"Someone Client",
 			"slug":"project_five",
-			"description":"Lorem ipsum dolar",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
 			"thumbnail":"",
-			"video":""
+			"video":"http://player.vimeo.com/video/"
 		}
 	],
 	"contact":{
