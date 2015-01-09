@@ -1,0 +1,28 @@
+.grid {
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	align-content: flex-start;
+	li {
+		background: rgba(0,0,0,0.5);
+		text-align: center;
+		list-style: none;
+		a {
+			padding: 1%;
+			width: 100%;
+			display: block;
+			text-decoration: none;
+		}
+		&.large {
+			width: 40%;
+		}
+		&.medium {
+			width: 30%;
+		}
+		&.small {
+			width: 20%;
+		}
+	}
+}

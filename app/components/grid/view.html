@@ -1,8 +1,8 @@
 <ul>
-	<li ng-repeat="item in grid">
-		<div class="inner">
+	<li ng-repeat="item in grid" class="{{ item.size }}">
+		<a href="" class="inner">
 			<h2>{{ item.name }}</h2>
 			<p>{{ item.description }}</p>
-		</div>
+		</a>
 	</li>
 </ul>
