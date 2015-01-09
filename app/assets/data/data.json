@@ -32,7 +32,7 @@
 		},
 		{
 			"size":"nothing",
-			"size":"small",
+			"size":"medium",
 			"name":"Project 4",
 			"client":"Someone Client",
 			"slug":"project_four",
@@ -52,7 +52,7 @@
 		},
 		{
 			"size":"nothing",
-			"size":"small",
+			"size":"medium",
 			"name":"ProjectName",
 			"client":"Someone Client",
 			"slug":"project_five",
@@ -82,7 +82,7 @@
 		},
 		{
 			"size":"nothing",
-			"size":"small",
+			"size":"medium",
 			"name":"ProjectName",
 			"client":"Someone Client",
 			"slug":"project_five",
@@ -92,7 +92,7 @@
 		},
 		{
 			"size":"nothing",
-			"size":"small",
+			"size":"medium",
 			"name":"ProjectName",
 			"client":"Someone Client",
 			"slug":"project_five",
