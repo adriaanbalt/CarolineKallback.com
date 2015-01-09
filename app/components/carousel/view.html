@@ -1,6 +1,7 @@
 <ul>
-	<li ng-repeat="item in carousel" ng-class='{current:$first}'>
+	<li ng-repeat="item in carousel" ng-class="{current:$first}">
 		<div class="inner">
+			<img src="{{ item.thumbnail }}"/>
 			<h2>{{ item.name }}</h2>
 			<p>{{ item.description }}</p>
 		</div>
