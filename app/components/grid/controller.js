@@ -15,11 +15,6 @@ angular.module('carolinekallback')
 
      var interval;
 
-     HomeService.getAll( function( data ) {
-          $scope.grid = data.projects;
-          console.log ( '$scope.grid: ', $scope.grid );
-     });
-
      Grid = {
           /**
           * @ngdoc function

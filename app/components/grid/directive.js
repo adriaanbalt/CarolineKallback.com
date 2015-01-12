@@ -9,8 +9,7 @@ angular.module('carolinekallback')
 	.directive('grid', [function() {
 		return {
 			restrict: 'C',
-			replace: true,
-			templateUrl: 'components/grid/view.html',
+			replace: false,
 			controller: "GridController",
 			link: function($scope, elem, attrs) {
 				var $grid = $(elem);
