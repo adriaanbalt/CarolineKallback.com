@@ -1,11 +1,10 @@
 .carousel {
 	position: relative;
 	width: 100%;
-	height: 140px;
+	min-height: 480px;
 	padding: 0;
 	background: #0f0;
 	li {
-		width: 100%;
 		z-index: 0;
 		position: absolute;
 		width: 100%;
