@@ -1,3 +1,12 @@
 h1 {
 	margin: 0;
 }
+h2 {
+	margin: 0;
+}
+a{
+	color: #000;
+	&:hover{
+		color: #999;
+	}
+}

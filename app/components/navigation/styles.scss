@@ -1,10 +1,15 @@
 .navigation {
 	width: 100%;
 	text-align: center;
+	margin: 1em;
 	h1 {
 		display: inline-block;
 	}
 	nav {
+		margin-left: 2em;
 		display: inline-block;
+		a {
+			padding: 0 1em;
+		}
 	}
 }
