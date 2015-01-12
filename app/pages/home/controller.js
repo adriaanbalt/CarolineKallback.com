@@ -13,5 +13,10 @@
 angular.module('carolinekallback')
 	.controller('HomeController', ['$scope', '$rootScope', '$location', 'HomeService', function($scope, $rootScope, $location, HomeService) {
 		
+		HomeService.getAll( function( data ) {
+			$scope.clients = data.clients;
+			$scope.projects = data.projects;
+			console.log ( '$scope.grid: ', data );
+		});
 
 	}]);
