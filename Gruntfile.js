@@ -189,7 +189,7 @@ module.exports = function(grunt) {
 		// Used to create a static web server for dev
 		connect: {
 			options: {
-				port: 7001,
+				port: 7002,
 				keepalive: true,
 				hostname: 'localhost'
 			},
@@ -277,7 +277,7 @@ module.exports = function(grunt) {
 		// 'copy:dist',
 
 		// combine CSS files after complication
-		'cssmin:dev',
+		'cssmin',
 
 		// Ensure no CSS errors
 		'csslint',
