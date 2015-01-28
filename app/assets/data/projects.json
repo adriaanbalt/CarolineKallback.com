@@ -1,162 +1,165 @@
-[
-	{
-		"id":"reel-2013",
-		"size":"large",
-		"name":"REEL 2013",
-		"client":"Someone Client",
-		"slug":"reel-2013",
-		"description":"Reel contains various projects for <a href='www.trollback.com' target='_blank'>Trollback + Company</a> and friends.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/54822932"
-	},
-	{
-		"id":"al-jazeera-america",
-		"size":"medium",
-		"name":"Al Jazeera America",
-		"client":"Someone Client",
-		"slug":"project_four",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"yeah-tv",
-		"size":"small",
-		"name":"Yeah TV",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"sundance-original",
-		"size":"medium",
-		"name":"Sundance Original",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"capture-this",
-		"size":"small",
-		"name":"Capture This",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"aperature",
-		"size":"large",
-		"name":"Aperature",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"calvin-klein",
-		"size":"medium",
-		"name":"Calvin Klein",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"reel-2012",
-		"size":"large",
-		"name":"Reel 2012",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"modavanti",
-		"size":"small",
-		"name":"Modavanti",
-		"client":"Modavanti",
-		"slug":"modavanti",
-		"description":"I directed, filmed, synced audio, and edited this video for <a href='http://modavanti.com/' target='_blank'>Modavanti</a>, a sustainable fashion webshop using <a href='http://www.adobe.com/products/premiere.html' target='_blank' class='app'>Adobe Premiere</a> and </br><a href='http://www.adobe.com/products/aftereffects.html' target='_blank' class='app'>Adobe After Effects</a>.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/52133989"
-	},
-	{
-		"id":"step",
-		"size":"small",
-		"name":"Step",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"nbc-sports",
-		"size":"medium",
-		"name":"NBC Sports",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"barnkanalen",
-		"size":"small",
-		"name":"Barnkanalen",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"world-science-festival",
-		"size":"medium",
-		"name":"World Science Festival",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"elsa-and-me",
-		"size":"small",
-		"name":"Elsa and Me",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"elana-jaroff",
-		"size":"small",
-		"name":"Elana Jaroff",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	},
-	{
-		"id":"living-tree-community",
-		"size":"small",
-		"name":"Living Tree Community",
-		"client":"Someone Client",
-		"slug":"project_five",
-		"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
-		"thumbnail":"",
-		"video":"http://player.vimeo.com/video/"
-	}
-]
+{
+	"projects":[
+		{
+			"id":"reel-2013",
+			"size":"large",
+			"name":"REEL 2013",
+			"client":"Someone Client",
+			"slug":"reel-2013",
+			"description":"Reel contains various projects for <a href='www.trollback.com' target='_blank'>Trollback + Company</a> and friends.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/54822932"
+		},
+		{
+			"id":"al-jazeera-america",
+			"size":"medium",
+			"name":"Al Jazeera America",
+			"client":"Someone Client",
+			"slug":"project_four",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"yeah-tv",
+			"size":"small",
+			"name":"Yeah TV",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"sundance-original",
+			"size":"medium",
+			"name":"Sundance Original",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"capture-this",
+			"size":"small",
+			"name":"Capture This",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"aperature",
+			"size":"large",
+			"name":"Aperature",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"calvin-klein",
+			"size":"medium",
+			"name":"Calvin Klein",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"reel-2012",
+			"size":"large",
+			"name":"Reel 2012",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"modavanti",
+			"size":"small",
+			"name":"Modavanti",
+			"client":"Modavanti",
+			"slug":"modavanti",
+			"description":"I directed, filmed, synced audio, and edited this video for <a href='http://modavanti.com/' target='_blank'>Modavanti</a>, a sustainable fashion webshop using <a href='http://www.adobe.com/products/premiere.html' target='_blank' class='app'>Adobe Premiere</a> and </br><a href='http://www.adobe.com/products/aftereffects.html' target='_blank' class='app'>Adobe After Effects</a>.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/52133989"
+		},
+		{
+			"id":"step",
+			"size":"small",
+			"name":"Step",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"nbc-sports",
+			"size":"medium",
+			"name":"NBC Sports",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"barnkanalen",
+			"size":"small",
+			"name":"Barnkanalen",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"world-science-festival",
+			"size":"medium",
+			"name":"World Science Festival",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"elsa-and-me",
+			"size":"small",
+			"name":"Elsa and Me",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"elana-jaroff",
+			"size":"small",
+			"name":"Elana Jaroff",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		},
+		{
+			"id":"living-tree-community",
+			"size":"small",
+			"name":"Living Tree Community",
+			"client":"Someone Client",
+			"slug":"project_five",
+			"description":"Lorem ipsum dolar amit sin.  Bonar illis afro doxtile bulg updown cloud tall fast.",
+			"thumbnail":"",
+			"video":"http://player.vimeo.com/video/"
+		}
+	]
+}
+

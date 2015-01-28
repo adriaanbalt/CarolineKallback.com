@@ -28,6 +28,7 @@
     "grunt-modernizr": "~0.3.0",
     "grunt-newer": "^0.8.0",
     "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1"
+    "time-grunt": "^0.3.1",
+    "assemble": "^0.4.42"
   }
 }

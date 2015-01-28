@@ -1,0 +1,23 @@
+<div id="home-screen">
+	<header>
+		<ul class="carousel"></ul>
+	</header>
+	<section>
+		<ul class='grid clients'>
+			<ul>
+			{{#each clients }}
+				{{> client }}
+			{{/each}}
+			</ul>
+		</ul>
+	</section>
+	<section>
+		<ul class='grid'>
+			<ul>
+			{{#each projects }}
+				{{> thumbnail }}
+			{{/each}}
+			</ul>
+		</ul>
+	</section>
+</div>

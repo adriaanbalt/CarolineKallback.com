@@ -66,25 +66,6 @@ module.exports = function(grunt) {
 		// Copies files and folders
 		// https://github.com/gruntjs/grunt-contrib-copy
 		copy: {
-			dev: {
-				files: [{
-					expand: true,
-					dot: true,
-					cwd: '<%= directory.app %>',
-					dest: '<%= directory.alt %>',
-					src: [
-						'*.{ico,png,txt,html}',
-						'.htaccess',
-						'assets/data/**/*',
-						'assets/fonts/**/*',
-						'assets/img/**/*',
-						'assets/video/**/*',
-						'pages/**/*.html',
-						'components/**/*.html',
-						'!global/**/*.html'
-					]
-				}]
-			},
 			dist: {
 				files: [{
 					expand: true,
@@ -94,7 +75,6 @@ module.exports = function(grunt) {
 					src: [
 						'*.{ico,png,txt,html}',
 						'.htaccess',
-						'assets/data/**/*',
 						'assets/fonts/**/*',
 						'assets/img/**/*',
 						'assets/video/**/*',
@@ -110,10 +90,6 @@ module.exports = function(grunt) {
 		// Concatenates JS from multiple files
 		// https://github.com/gruntjs/grunt-contrib-concat
 		concat: {
-			dev: {
-				src: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/components/**/*.js'],
-				dest: '<%= directory.alt %>/assets/js/<%= pkg.name %>.js',
-			},
 			dist: {
 				src: ['<%= directory.app %>/vendor/**/*.js', '<%= directory.app %>/global/**/*.js', '<%= directory.app %>/pages/**/*.js', '<%= directory.app %>/components/**/*.js'],
 				dest: '<%= directory.dist %>/assets/js/<%= pkg.name %>.js',
@@ -172,15 +148,32 @@ module.exports = function(grunt) {
             options: {
                 mangle: false
             },
-			dev: {
-				files: {
-					'<%= directory.alt %>/assets/js/<%= pkg.name %>.min.js': ['<%= directory.app %>/assets/js/<%= pkg.name %>.js']
-				}
-			},
 			dist: {
 				files: {
 					'<%= directory.dist %>/assets/js/<%= pkg.name %>.min.js': ['<%= directory.app %>/assets/js/<%= pkg.name %>.js']
 				}
+			}
+		},
+
+		// Assemble
+		// Static site generator for Node.js, Grunt.js, and Yeoman (and soon, Gulp).
+		// https://github.com/assemble/assemble
+		assemble: {
+			dist: {
+				options: {
+					assets: '<%= directory.dist %>',
+					partials: ['<%= directory.app %>/views/partials/**/*.hbs'],
+					layout: ['<%= directory.app %>/views/layouts/default.hbs'],
+					data: ['directory.app %>/assets/data/**/*.json'],
+					production: false,
+					pages: ['<%= directory.app %>/views/pages/**/*.hbs']
+				},
+				files: [{
+					expand: true,
+					src: ['**/*.hbs'],
+					cwd: '<%= directory.app %>/views/pages/',
+					dest: '<%= directory.dist %>'
+				}]
 			}
 		},
 
@@ -192,12 +185,6 @@ module.exports = function(grunt) {
 				port: 7002,
 				keepalive: true,
 				hostname: 'localhost'
-			},
-			dev: {
-				options: {
-					open: true,
-					base: 'app'
-				}
 			},
 			dist: {
 				options: {
@@ -219,8 +206,8 @@ module.exports = function(grunt) {
 				}
 			},
 			html: {
-				files: ['<%= directory.app %>/*.html', '<%= directory.app %>/pages/**/*.html', '<%= directory.app %>/components/**/*.html'],
-				tasks: ['newer:copy:dist'],
+				files: ['<%= directory.app %>/*.html', '<%= directory.app %>/pages/**/*.html', '<%= directory.app %>/components/**/*.html', '<%= directory.app %>/views/**/*.hbs' ],
+				tasks: ['newer:copy:dist','assemble'],
 				options: {
 					livereload: true
 				}
@@ -234,7 +221,7 @@ module.exports = function(grunt) {
 			},
 			json: {
 				files: ['<%= directory.app %>/assets/data/**/*.json'],
-				tasks: ['clean:json','newer:copy:dist'],
+				tasks: ['assemble'],
 				options: {
 					livereload: true
 				}
@@ -245,7 +232,6 @@ module.exports = function(grunt) {
 		// Allow multiple tasks to occur at once
 		// https://github.com/sindresorhus/grunt-concurrent
 		concurrent: {
-			dev: ['watch','connect:dev'],
 			dist: ['watch','connect:dist'],
 			options: {
 				logConcurrentOutput: true
@@ -254,27 +240,29 @@ module.exports = function(grunt) {
 
 	});
 
-	require('load-grunt-tasks')(grunt);
+	require('load-grunt-tasks')(grunt,{
+		pattern: ['grunt-*', 'assemble']
+	});
 
 	// Development grunt task
 	grunt.registerTask('dev', [
 		// Cleanup Previously Generated Files
-		'clean:styles',
-
-		// Cleanup Previously Generated Files
-		'clean:js',
+		'clean',
 
 		// Concat the JS
-		'concat:dist',
+		'concat',
 
-		// // Minify JS
+		// Minify JS
 		// 'uglify:dist',
 
 		// Sass compilation
 		'compass',
 
+		// html compilation
+		'assemble',
+
 		// Copy HTML and assets
-		// 'copy:dist',
+		'copy',
 
 		// combine CSS files after complication
 		'cssmin',
@@ -283,34 +271,7 @@ module.exports = function(grunt) {
 		'csslint',
 
 		// Runs both WATCH and CONNECT
-		'concurrent:dist'
-	]);
-
-	// Development grunt task
-	grunt.registerTask('prod', [
-		// Cleanup Previously Generated Files
-		'clean:dist',
-
-		// Concat the JS
-		'concat:dist',
-
-		// // Minify JS
-		'uglify:dist',
-
-		// Sass compilation
-		'compass',
-
-		// Copy HTML and assets
-		'copy:dist',
-
-		// combine CSS files after complication
-		'cssmin',
-
-		// Ensure no CSS errors
-		'csslint',
-
-		// Runs both WATCH and CONNECT
-		'concurrent:dist'
+		'concurrent'
 	]);
 
 };
