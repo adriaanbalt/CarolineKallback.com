@@ -1,0 +1,75 @@
+{
+	"contact":{
+		"name":"Caroline Kallback",
+		"email":"CAROLINE.KALLBACK@gmail.com",
+		"motto":"Making sh*t happen since 1989"
+	},
+
+	"skills":[
+		{
+			"name":"Final Cut Pro",
+			"url":"http://www.finalcutpro.com"
+		},
+		{
+			"name":"Adobe After Effects",
+			"url":"http://www.adobe.com"
+		},
+		{
+			"name":"Adobe Premier",
+			"url":"http://www.adobe.com"
+		},
+		{
+			"name":"Solid Works",
+			"url":"http://www.solidworks.com"
+		},
+		{
+			"name":"Soundtrack Pro",
+			"url":"http://www.SoundtrackPro.com"
+		},
+		{
+			"name":"iDVD",
+			"url":"http://www.iDVD.com"
+		}
+	],
+
+	"languages":[
+		"Swedish",
+		"English",
+		"Croatian",
+		"Spanish"
+	],
+
+	"education":[
+		{
+			"institution":"School of Visual Arts",
+			"courses":[
+				"Advanced After Effects",
+				"After Effects"
+			]
+		},
+		{
+			"institution":"City College of New York CUNY",
+			"courses":[
+				"Studies in Film & Video",
+				"Engineering",
+				"Architecture",
+				"English"
+			]
+		},
+		{
+			"institution":"New York University",
+			"courses":[
+				"Product Design Certificate",
+				"ESL, Writing and Editing II",
+				"Solid Works"
+			]
+		},
+		{
+			"institution":"KTH Royal Institute of Technology (Kungliga Tekniska Högskolan)",
+			"courses":[
+				"Design and Product Development",
+				"Engineering"
+			]
+		}
+	]
+}
