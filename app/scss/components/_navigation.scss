@@ -1,0 +1,15 @@
+.navigation {
+	width: 100%;
+	text-align: center;
+	margin: 3em 0;
+	h1 {
+		display: inline-block;
+	}
+	nav {
+		margin-left: 2em;
+		display: inline-block;
+		a {
+			padding: 0 1em;
+		}
+	}
+}

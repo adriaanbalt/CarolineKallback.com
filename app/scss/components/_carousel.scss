@@ -1,0 +1,44 @@
+.carousel {
+	position: relative;
+	width: 100%;
+	min-height: 480px;
+	padding: 0;
+	background: #0f0;
+	li {
+		z-index: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		right: 0;
+		text-align: center;
+		pointer-events: none;
+		overflow: hidden;
+		opacity: 0;
+		z-index: 999;
+		&.fadeOut{
+			opacity: 0;
+		}
+		&.fadeIn{
+			opacity: 1;
+		}
+		&.current {
+			opacity: 1;
+			pointer-events: auto;
+			z-index: 1000;
+		}
+		.container{
+			z-index: 5;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			display: block;
+			padding: 3em;
+			// @include opacity(0);
+		}
+	}
+}
