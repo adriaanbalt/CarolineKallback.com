@@ -1,8 +1,8 @@
-<li ng-repeat="item in projects" class="{{ item.size }}">
-	<a href="" class="inner">
+<li class="{{ size }}">
+	<a href="{{ slug }}">
 		<div class="contain">
-			<h2>{{ item.name }}</h2>
-			<p>{{ item.description }}</p>
+			<h2>{{{ name }}}</h2>
+			<p>{{{ snippet }}}</p>
 		</div>
 	</a>
 </li>
