@@ -1,12 +1,42 @@
 [
-	"BBC",
-	"Pitbull",
-	"Calvin Klein",
-	"NBC Sports",
-	"Al Jazeera America",
-	"SVT",
-	"Sundance",
-	"Yeah TV",
-	"Aperature",
-	"World Science Festival"
+	{
+		"name":"BBC",
+		"slug":"bbc"
+	},
+	{
+		"name":"Pitbull",
+		"slug":"pitbull"
+	},
+	{
+		"name":"Calvin Klein",
+		"slug":"calvin-klein"
+	},
+	{
+		"name":"NBC Sports",
+		"slug":"nbc-sports"
+	},
+	{
+		"name":"Al Jazeera America",
+		"slug":"al-jazeera-america"
+	},
+	{
+		"name":"SVT",
+		"slug":"svt"
+	},
+	{
+		"name":"Sundance",
+		"slug":"sundance"
+	},
+	{
+		"name":"Yeah TV",
+		"slug":"yeah-tv"
+	},
+	{
+		"name":"Aperature",
+		"slug":"aperature"
+	},
+	{
+		"name":"World Science Festival",
+		"slug":"world-science-festival"
+	}
 ]
