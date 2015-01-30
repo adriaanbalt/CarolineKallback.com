@@ -1,7 +1,7 @@
 var paths = {
 	js: ['app/vendor/**/*.js', 'app/global/**/*.js', 'app/pages/**/*.js', 'app/assets/components/**/*.js'],
 	html: ['app/pages/**/*.html'],
-	css: []
+	css: ['app/scss']
 };
 
 module.exports = function(grunt) {
@@ -164,7 +164,7 @@ module.exports = function(grunt) {
 					assets: '<%= directory.dist %>',
 					partials: ['<%= directory.app %>/views/partials/**/*.hbs'],
 					layout: ['<%= directory.app %>/views/layouts/default.hbs'],
-					data: ['directory.app %>/assets/data/**/*.json'],
+					data: ['<%= directory.app %>/assets/data/**/*.json'],
 					production: false,
 					pages: ['<%= directory.app %>/views/pages/**/*.hbs']
 				},
@@ -213,7 +213,7 @@ module.exports = function(grunt) {
 				}
 			},
 			styles: {
-				files: ['<%= directory.app %>/global/**/*.scss','<%= directory.app %>/components/**/*.scss','<%= directory.app %>/pages/**/*.scss'],
+				files: ['<%= directory.app %>/**/*.scss'],
 				tasks: ['clean:styles','compass','cssmin'],
 				options: {
 					livereload: true
@@ -245,7 +245,7 @@ module.exports = function(grunt) {
 	});
 
 	// Development grunt task
-	grunt.registerTask('dev', [
+	grunt.registerTask('default', [
 		// Cleanup Previously Generated Files
 		'clean',
 
