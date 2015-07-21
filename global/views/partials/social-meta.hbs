@@ -1,0 +1,24 @@
+{{#if facebook }}
+<!-- facebook and pinterest -->
+<meta property="og:title" content="{{ facebook.title }}">
+<meta property="og:description" content="{{ facebook.description }}">
+<meta property="og:url" value="">
+<meta property="og:image" content="{{ facebook.image }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Samsung Electronics America">
+{{/if}}
+{{#if twitter }}
+<!-- twitter -->
+<meta name="twitter:card" value="summary_large_image">
+<meta name="twitter:site" value="@Samsungtweets">
+<meta name="twitter:creator" value="@Samsungtweets">
+<meta name="twitter:title" value="{{ twitter.title }}">
+<meta name="twitter:description" value="{{ twitter.description }}">
+<meta name="twitter:image:src" content="{{ twitter.image }}">
+{{/if}}
+{{#if google }}
+<!-- google plus -->
+<meta itemprop="name" content="{{ google.title }}">
+<meta itemprop="description" content="{{ google.description }}">
+<meta itemprop="image" content="{{ google.image}} ">
+{{/if}}

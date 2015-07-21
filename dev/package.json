@@ -1,0 +1,59 @@
+{
+  "directory": {
+    "app": "app",
+    "dist": "../dist"
+  },
+  "paths": {
+    "global": {
+      "html": "../global/views/**/*.hbs",
+      "js": "../global/js/**/*.js",
+      "scss": "../global/scss"
+    },
+    "page": {
+      "layout": "../global/views/layouts/default.hbs",
+      "html": "app/views/**/*.hbs",
+      "js": "app/assets/js/**/*.js",
+      "scss": "app/scss",
+      "data": [
+        "app/data/**/*.json",
+        "app/assets/ajax/**/*.json"
+      ]
+    }
+  },
+  "name": "Samsung",
+  "description": "Samsung",
+  "version": "0.0.1",
+  "private": false,
+  "author": [
+    "Adam Fratino <afratino@barbariangroup.com>",
+    "Jeesun Kim <jkim@barbariangroup.com>",
+    "Eleanor Lewis <elewis@barbariangroup.com>",
+    "Adriaan Scholvinck <ascholvinck@barbariangroup.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com:thebarbariangroup/samsung-b2c.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "~0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-modernizr": "~0.3.0",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "assemble": "^0.4.42",
+    "handlebars-helpers": "^0.5.8"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}
