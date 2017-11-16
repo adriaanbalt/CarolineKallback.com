@@ -1,0 +1,60 @@
+
+body {
+	background: #ff2f70;
+}
+
+.flamenco {
+	font-family: 'Flamenco', cursive;
+}
+
+.ribeye {
+	font-family: 'Ribeye Marrow', cursive;
+}
+
+.alexbrush {
+	font-family: 'Alex Brush', cursive;
+}
+
+.big {
+	font-size: 50px;
+	text-align: center;
+}
+
+.medium {
+	font-size: 35px;
+	text-align: center;
+}
+
+.normal {
+	font-size: 20px;
+	text-align: center;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.center {
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	position: relative;
+}
+
+#wrapper {
+	width: 900px;
+}
+
+.imageviewer{
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	position: relative;
+}
+.imageviewer ul {
+	list-style-type: none;
+}
+.imageviewer ul li {
+	text-align: center;
+}
