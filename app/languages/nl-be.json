@@ -1,0 +1,142 @@
+{
+  "file-path": "http://archive.balt.us/sonos-bluenote/",
+  "lang-locale": "nl-be",
+  "header": {
+    "direct-buy": {
+      "message": "Gratis verzending, 100 dagen geld-terug-garantie",
+      "sales-help": {
+        "link-title": "Hulp bij aankoop",
+        "dropdown": {
+          "speak-label": "lemand spreken",
+          "speak-call-link": "Neem contact met ons op",
+          "info-label": "Algemene informatie",
+          "info-questions-link": "Veelgestelde vragen",
+          "info-video-demo": "Video-demo",
+          "video-demo-id": "YKUfqm4Ac1M",
+          "order-label": "Bestelgegevens",
+          "order-returns-link": "Retourneren & beleid"
+        }
+      }
+    },
+    "what-is-sonos": {
+      "link-title": "Wat is Sonos",
+      "dropdown": {
+        "system": "Systeem",
+        "music": "Muziek",
+        "app": "App"
+      }
+    },
+    "product-overview": {
+      "link-title": "Producten",
+      "dropdown": {
+        "speakers": "Speakers",
+        "home-theater": "Home cinema",
+        "components": "Componenten"
+      }
+    },
+    "shop": {
+      "link-title": "Shop",
+      "dropdown": {
+        "all-products-link": "Alle bekijken",
+        "speakers-label": "Draadloze luidsprekers",
+        "play1": "PLAY:1",
+        "play3": "PLAY:3",
+        "play5": "PLAY:5",
+        "home-theater-label": "Draadloze home cinema",
+        "playbar": "PLAYBAR",
+        "sub": "SUB",
+        "components-label": "Bestaande apparatuur toevoegen",
+        "connect-amp": "CONNECT:AMP",
+        "connect": "CONNECT"
+      }
+    },
+    "support": "Support",
+    "language": "Taal",
+    "find-a-store": "Winkel zoeken",
+    "sign-in": "Aanmelden",
+    "choose-your-language": "Choose Your Language"
+  },
+  "direct-buy-modal": {
+    "title": "Gratis verzending, 100 dagen geld-terug-garantie",
+    "description": "Als 100 dagen genieten van alle muziek ter wereld jou niet kan overtuigen, weten wij het ook niet meer. Laat het ons binnen die 100 dagen weten en wij komen je aankoop gratis bij je ophalen."
+  },
+  "footer": {
+    "about": "Over Sonos",
+    "reviews": "Recensies",
+    "media-center": "Media center",
+    "jobs": "Carrière",
+    "dealer-store": "Dealer",
+    "corporate-sales": "",
+    "my-account": "Mijn account",
+    "contact-us": "Contact",
+    "gift-cards": "",
+    "site-map": "Sitemap",
+    "privacy-policy": "Privacybeleid",
+    "legal": "Juridisch",
+    "email-go": "Verger",
+    "email-disclaimer": "Exclusieve evenementen en aankondigingen. Geen spam.",
+    "email-invalid": "Voer een geldig e-mailadres in.",
+    "email-placeholder": "e-mailadres invoeren"
+  },
+  "country-names": {
+    "australia": "Australië",
+    "belgium": "België",
+    "canada": "Canada",
+    "china": "China",
+    "denmark": "Denemarken",
+    "france": "Frankrijk",
+    "germany": "Duitsland",
+    "italy": "Italië",
+    "mexico": "Mexico",
+    "netherlands": "Nederland",
+    "norway": "Noorwegen",
+    "spain": "Spanje",
+    "sweden": "Zweden",
+    "united-kingdom": "Verenigd Koninkrijk",
+    "united-states": "Verenigde Staten",
+    "rest-of-europe": "Rest van Europa",
+    "rest-of-the-world": "Rest van de Wereld"
+  },
+  "languages": {
+    "english": "Engels",
+    "french": "Frans",
+    "danish": "Deens",
+    "german": "Duits",
+    "italian": "Italiaans",
+    "spanish": "Spaans",
+    "dutch": "Nederlands",
+    "swedish": "Zweeds",
+    "norwegian": "Noors"
+  },
+  "hero": {
+    "header": "So Blue</br><span>it shows.</span>",
+    "paragraph": "Vier 75 jaar Blue Note Records met de Sonos PLAY:1 Blue Note Limited Edition.",
+    "availability": "Beschikbaar vanaf 5 maart, 10:00</br>Exclusief op sonos.com voor €250",
+    "button": "Bestel nu",
+    "button-link": "http://www.sonos.com/nl-be/sonos-shop"
+  },
+  "year-seventyfive": {
+    "header": "Sonos en Blue Note.</br>Alles draait om muziek.",
+    "paragraph": "We hebben onze krachten gebundeld met de muziekliefhebbers van Blue Note om je muziekervaring nog intenser te maken. En om onze passie voor muziek te vieren, brengen we een gelimiteerde editie uit: de Sonos PLAY:1 Blue Note Limited Edition. Als eerbetoon aan 75 jaar muziek van Blue Note."
+  },
+  "look-and-feel": {
+    "quote": "“Fidelity is true.</br><span>Give me the truth.</span>”",
+    "credit": "- DON WAS</br><span>BLUE NOTE RECORDS</span>",
+    "header": "Een speaker die eruit ziet zoals hij klinkt.",
+    "paragraph": "Wie jazz zegt, zegt Blue Note. De naam van dit beroemde label is afgeleid van 'blue notes': bewust lager gespeelde tonen in jazz die de rauwe emotie van een nummer naar boven brengen. De Blue Note PLAY:1 vangt deze emotie in een kleur die staat voor de tonen die jazz zo uniek maken."
+  },
+  "close-up": {
+    "header": "Diep, krachtig</br>en kristalhelder.",
+    "paragraph": "Met twee speciaal ontworpen drivers en ingebouwde versterkers brengt de Blue Note PLAY:1 het geluid met zo'n precisie dat je de voor jazz, zo typische nuances kunt voelen. Installeren is zo eenvoudig dat de speelse klanken binnen no time door je huis klinken."
+  },
+  "apps": {
+    "header": "Alleen bij Blue Note.",
+    "paragraph": "Met de Blue Note PLAY:1 krijg je exclusieve toegang tot ons Blue Note Artist Selects station van de legendarische Blue Note-artiest en producer Don Was. Daarnaast kun je met één druk op de knop naar twee andere Blue Note-stations luisteren, die de hele dag jazz streamen in alle denkbare varianten.",
+    "image": "media/product/bluenote/phones/phone-dutch.png"
+  },
+  "art-blakey": {
+    "header": "“We’re here</br><span>to have a ball.”</span>",
+    "credit": "- Art Blakey"
+  }
+}
+

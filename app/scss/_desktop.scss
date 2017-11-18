@@ -1,0 +1,182 @@
+// TABLET = 1025px
+@media only screen and (min-width: 64.063rem){
+#blue-note {
+	$width: 1025;
+	// h2{
+	// 	font-size: 2.1rem;
+	// 	line-height: 1rem;
+	// 	margin-bottom: .6rem;
+	// }
+	// p {
+	// 	font-size: .8rem;
+	// 	line-height: 1.1rem;
+	// 	margin-bottom: 1.1rem;
+	// 	letter-spacing: -.01rem;
+	// 	&.large {
+	// 		font-size: 1rem;
+	// 		line-height: 1.4rem;
+	// 		margin-bottom: .5rem;
+	// 		letter-spacing: -.01rem;
+	// 	}
+	// }
+
+	.tunein-logo {
+		width: 26%;
+	}
+	.bluenoteonsonos-logo {
+		width: 26%;
+	}
+	#hero {
+		@include aspectratio( $width, 716 );
+		max-height: 44.750rem;
+		.gradient-vertical{
+			margin-top: 15.5rem;
+		}
+		#hero-product {
+			padding: 3.6% 0 0 7.8%;
+			width: 49.9%;
+		}
+		#musician-lee-moran {
+			padding: 1% 0 0 12%;
+			width: 46%;
+		}
+		.button.cta {
+			margin-left: 5.2rem;
+			margin-top: 4rem;
+		}
+		.copy {
+			padding-left: 9%;
+			margin-top: 12%;
+			width: 60%;
+			h1 {
+				font-size: 4.5rem;
+				line-height: 4rem;
+				// letter-spacing: -.2rem;
+				margin-bottom: 1.8%;
+				span {
+					margin-left: 5rem;
+				}
+			}
+			p {
+				margin-left: 5rem;
+			}
+			.logos {
+				margin-left: 4.4rem;
+				margin-top: 2rem;
+			}
+		}
+	}
+
+	#years-75 {
+		@include aspectratio( $width, 358 );
+		max-height: 22.500rem;
+		min-height: 0;
+		#musician-donald-byrd {
+			margin-top: -2.438rem;
+			margin-left: -2.563rem;
+			width: 84%;
+		}
+	}
+
+	#look-and-feel {
+		@include aspectratio( $width, 745 );
+		max-height: 46.563rem;
+		.gradient-vertical{
+			width: 100%;
+			height: 3.250rem;
+			top: 39rem;
+		}
+		#bluenote-tall {
+			width: 51%;
+			margin-top: 2.7rem;
+			padding-left: 3.9rem;
+		}
+		.quote {
+			p {
+				margin-left: 50%;
+			}
+		}
+		.copy {
+			@include vertical-align(65%);
+			position: absolute;
+			h2 {
+				// font-size: 2.1em;
+				// line-height: 1em;
+				margin-bottom: .6rem;
+				// letter-spacing: -.13rem;
+				width: 100%;
+			}
+			padding-top: 0;
+		}
+	}
+
+	#close-up {
+		@include aspectratio( $width, 300 );
+		max-height: 21em;
+		.column, .columns {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.image {
+			width: 55%;
+			margin-top: -21%;
+			margin-left: 0;
+		}
+		.copy {
+			padding-left: 2rem;
+		}
+	}
+
+	#apps {
+		@include aspectratio( $width, 357 );
+		max-height: 22.313rem;
+		.copy {		
+			h2 {
+				// font-size: 2rem;
+				// letter-spacing: -.08rem;
+			}
+		}
+		.mask {
+			height: 100%;
+		}
+		.logos {
+			margin-top: 7%;
+			margin-left: -1%;
+		}
+		.image {
+			width: 52%;
+			margin-left: 47%;
+			margin-top: -9%;
+		}
+	}
+
+	#art-blakey {
+		@include aspectratio( $width, 360 );
+		max-height: 22.500rem;
+		#musician-art-blakey {
+			margin-top: -16.6%;
+			margin-left: 1%;
+			width: 63%;
+		}
+		h1 {
+			// font-size: 2.8rem;
+			// line-height: 2.8rem;
+			// letter-spacing: -.08rem;
+			margin-left: 11%;
+		}
+		.logos {
+			margin-left: 15%;
+			.sonos-logo {
+				width: 30%;
+			}
+			.bluenote-logo {
+				width: 30%;
+			}
+		}
+		#credit {
+			text-align: right;
+			// font-size: .8rem;
+		}
+	}
+}
+}

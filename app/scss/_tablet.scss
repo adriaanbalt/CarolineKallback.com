@@ -1,0 +1,429 @@
+// TABLET = 641px
+@media (min-width: 40.063em){
+#blue-note {
+	$width: 641;
+	.column, .columns {
+		padding-left: .9375rem;
+		padding-right: .9375rem;
+	}
+	.medium-pos-abs {
+		position: absolute;
+	}
+	.medium-right {
+		float: right;
+	}
+	.logos {
+		.line {
+			height: 3.125rem;
+		}
+	}
+	// h2 {
+	// 	font-size: 1.15rem;
+	// 	line-height: 1.3rem;
+	// 	margin-bottom: .75em;
+	// }
+	// p {
+	// 	font-size: .8rem;
+	// 	line-height: 1.2rem;
+	// 	margin-bottom: 1rem;
+	// 	letter-spacing: -.02rem;
+	// 	&.large {
+	// 		font-size: 1.23rem;
+	// 		line-height: 1.6rem;
+	// 		margin-bottom: 1.3rem;
+	// 		letter-spacing: -.01rem;
+	// 	}
+	// }
+	#hero {
+		@include aspectratio( $width, 600 );
+		.gradient-vertical{
+			height: 26%;
+			top: 20%;
+			margin-top: 17rem;
+		}
+		#hero-product {
+			padding: 9.3% 0 0 2.6%;
+			width: 49.5%;
+		}
+		#musician-lee-moran {
+			padding: 1.4rem 0 0 4rem;
+			width: 50%;
+		}
+		.button.cta {
+			margin-left: 19.5%;
+			margin-top: 3rem;
+			&.tiny{
+				display: none;
+			}
+			&.small {
+				display: inline-block;
+			}
+		}
+		.copy {
+			margin-top: 20%;
+			padding-left: 9%;
+			h1 {
+				font-size: 3.5rem;
+				line-height: 3.2rem;
+				margin-bottom: 3%;
+				span {
+					margin-left: 19.5%;
+				}
+			}
+			p {
+				margin-left: 19.5%;
+			}
+			.logos {
+				margin-left: 17.5%;
+				margin-top: 2rem;
+			}
+		}
+	}
+
+	#years-75 {
+		@include aspectratio( $width, 350 );
+		.copy {
+			@include vertical-align( 50% );
+			position: absolute;
+			padding: 0;
+			margin-top: 0;
+			left: 0;
+		}
+		#musician-donald-byrd {
+			margin-top: -1rem;
+			margin-left: -0.938rem;
+		}
+	}
+
+	#look-and-feel {
+		@include aspectratio( $width, 550 );
+		.gradient-vertical{
+			height: 3.250rem;
+			top: 82%;
+		}
+		.quote {
+			@include vertical-align( 3% );
+			position: absolute;
+			padding:0;
+			.columns {
+				padding-right: 0;
+			}
+			p {
+				margin-left: 40%;
+			}
+		}
+		#bluenote-tall {
+			width: 50%;
+		}
+		.copy {
+			.container {
+				// padding-right: 0;
+			}
+			background: transparent;
+			@include vertical-align( 100% );
+			position: absolute;
+			padding: 0;
+			margin-top: 0;
+		}
+
+	}
+
+	#close-up {
+		min-height: 350px;
+		@include aspectratio( $width, 284 );
+		.column, .columns {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.image {
+			margin-top: -21%;
+			width: 53%;
+		}
+		.copy {
+			@include vertical-align( 50% );
+			position: absolute;
+			background: transparent;
+			padding-top: 0;
+			margin-top: 0;
+			height: auto;
+			.container {
+				padding-top: 0;
+			}
+		}
+	}
+
+	#apps {
+		@include aspectratio( $width, 284 );
+		.mask {
+			height: 100%;
+		}
+		.image {
+			width: 66%;
+			margin-left: 48%;
+			margin-top: -12%;
+		}
+		.copy {
+			@include vertical-align(50%);
+			position: absolute;
+			margin-top: 0;
+		}
+	}
+
+	#art-blakey {
+		@include aspectratio( $width, 306 );
+		#musician-art-blakey {
+			margin-top: -15%;
+			margin-left: -8%;
+			width: 69%;
+		}
+		h1 {
+			// font-size: 2.8rem;
+			// line-height: 2.8rem;
+			// letter-spacing: -.08rem;
+		}
+		.copy {
+			@include vertical-align(50%);
+			position: absolute;
+			margin-top: 0;
+		}
+		#credit {
+			// font-size: .8rem;
+		}
+	}
+}
+}
+
+// TABLET = 733px
+@media (min-width: 45.875em){
+#blue-note{
+	#hero {
+		.gradient-vertical {
+			margin-top: 18rem;
+		}
+		.button.cta {
+			margin-top: 4.5rem;
+		}
+	}
+}
+}
+
+
+// TABLET = 750px
+@media (min-width: 46.875em){
+#blue-note{
+	#look-and-feel {
+		.quote {
+			@include vertical-align(10%);
+			position: absolute;
+		}
+		.copy {
+			@include vertical-align(70%);
+			position: absolute;
+		}
+	}
+}
+}
+
+// TABLET = 768px
+@media (min-width: 48.063em){
+#blue-note {
+	// h2 {
+	// 	font-size: 1.15rem;
+	// 	line-height: 1.3rem;
+	// 	margin-bottom: .75em;
+	// }
+	// p {
+	// 	font-size: .9rem;
+	// 	line-height: 1.3rem;
+	// 	margin-bottom: 1rem;
+	// 	letter-spacing: -.02rem;
+	// 	&.large {
+	// 		font-size: 1.23rem;
+	// 		line-height: 1.6rem;
+	// 		margin-bottom: 1.3rem;
+	// 		letter-spacing: -.01rem;
+	// 	}
+	// }
+	#hero {
+		.gradient-vertical {
+			// margin-top: 18rem;
+		}
+		.copy {
+			h1 {
+				// font-size: 4.1rem;
+				// line-height: 3.8rem;
+				// letter-spacing: -.2rem;
+				margin-bottom: 4%;
+				span {
+					margin-left: 19.5%;
+				}
+			}
+			p {
+				margin-left: 19.5%;
+			}
+			.logos {
+				margin-left: 17.5%;
+			}
+		}
+	}
+
+	#art-blakey {
+		h1 {
+			// font-size: 3rem;
+			// line-height: 3rem;
+		}
+	}
+}
+}
+
+// TABLET = 980px
+@media (min-width: 55.000rem){
+#blue-note {
+	.sonos-logo {
+		width: 38%;
+	}
+	.bluenote-logo {
+		width: 35%;
+	}
+	// h2{
+	// 	font-size: 1.6rem;
+	// 	line-height: 1.3rem;
+	// 	// margin-bottom: 1.1rem;
+	// }
+	// p {
+	// 	font-size: 1rem;
+	// 	line-height: 1.6rem;
+	// 	margin-bottom: 1.1rem;
+	// 	letter-spacing: -.01rem;
+	// 	&.large {
+	// 		font-size: 1.23rem;
+	// 		line-height: 1.6rem;
+	// 		margin-bottom: 1.3rem;
+	// 		letter-spacing: -.01rem;
+	// 	}
+	// }
+	#hero {
+		.button.cta {
+			margin-left: 20.5%;
+		}
+		.copy {
+			h1 {
+				// font-size: 4.5rem;
+				// line-height: 3.9rem;
+				// letter-spacing: -.2rem;
+				margin-bottom: 4%;
+				span {
+					margin-left: 20.5%;
+				}
+			}
+			p {
+				margin-left: 20.5%;
+			}
+
+			.logos {
+				margin-left: 17.5%;
+			}
+		}
+	}
+
+	#years-75 {
+		min-height: 460px;
+		#musician-donald-byrd {
+			width: 86%;
+			margin-top: -2%;
+			margin-left: -3%;
+		}
+		.copy {
+			width: 46%;
+		}
+	}
+
+	#look-and-feel {
+		.copy {
+			width: 46%;
+			padding-left: 0;
+		}
+		.gradient-vertical{
+			width: 100%;
+			height: 10.75rem;
+			top: 84.5%;
+			z-index: 1;
+		}
+		#bluenote-tall {
+			margin-top: 4rem;
+			width: 52%;
+			margin-left: 44% !important;
+		}
+	}
+
+	#close-up {
+		.copy {
+			width:46%;
+		}
+	}
+
+	#apps {
+		.copy {
+			width:46%;
+		}
+		.image {
+			width: 64%;
+			margin-left: 41%;
+			margin-top: -11%;
+		}
+	}
+
+	#art-blakey {
+		#musician-art-blakey {
+			margin-top: -18.5%;
+			margin-left: -12%;
+			width: 73%;
+		}
+		h1 {
+			// font-size: 3.8rem;
+			// line-height: 3.8rem;
+		}
+		#credit {
+			// font-size: 1rem;
+		}
+		.logos {
+			margin-left: 5%;
+			.sonos-logo{
+				width: 27%;
+			}
+			.bluenote-log {
+				width: 27%;
+			}
+		}
+	}
+
+}
+}
+// TABLET = 960px
+@media (min-width: 60.00rem){
+#blue-note{
+	#hero{
+		.copy {
+			h1 {
+				// font-size: 5rem;
+				// line-height: 4rem;
+			}
+		}
+	}
+	#look-and-feel{
+		.quote {
+			@include vertical-align(15%);
+			position: absolute;
+		}
+		.copy {
+			@include vertical-align(55%);
+			position: absolute;
+		}
+	}
+	#art-blakey {
+		.logos {
+			margin-left: 4%;
+		}
+	}
+}
+}

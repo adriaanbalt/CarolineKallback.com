@@ -1,0 +1,141 @@
+{
+  "file-path": "http://archive.balt.us/sonos-bluenote/",
+  "lang-locale": "en-gb",
+  "header": {
+    "direct-buy": {
+      "message": "Free shipping, 100-day trial period",
+      "sales-help": {
+        "link-title": "Sales help",
+        "dropdown": {
+          "speak-label": "Speak with someone",
+          "speak-call-link": "Call us - 1.800.680.2345",
+          "info-label": "General info",
+          "info-questions-link": "Top pre-purchase questions",
+          "info-video-demo": "Video demo",
+          "video-demo-id": "OUvAT9GTqH4",
+          "order-label": "Order information",
+          "order-returns-link": "Returns & policies"
+        }
+      }
+    },
+    "what-is-sonos": {
+      "link-title": "What is Sonos",
+      "dropdown": {
+        "system": "System",
+        "music": "Music",
+        "app": "App"
+      }
+    },
+    "product-overview": {
+      "link-title": "Product overview",
+      "dropdown": {
+        "speakers": "Speakers",
+        "home-theater": "Home theatre",
+        "components": "Components"
+      }
+    },
+    "shop": {
+      "link-title": "Shop",
+      "dropdown": {
+        "all-products-link": "All products",
+        "speakers-label": "Wireless speakers",
+        "play1": "PLAY:1",
+        "play3": "PLAY:3",
+        "play5": "PLAY:5",
+        "home-theater-label": "Wireless home theatre",
+        "playbar": "PLAYBAR",
+        "sub": "SUB",
+        "components-label": "Add existing equipment",
+        "connect-amp": "CONNECT:AMP",
+        "connect": "CONNECT"
+      }
+    },
+    "support": "Support",
+    "language": "Language",
+    "find-a-store": "Find a store",
+    "sign-in": "Sign in",
+    "choose-your-language": "Choose Your Language"
+  },
+  "direct-buy-modal": {
+    "title": "Free shipping, 100-day trial period",
+    "description": "Contact our support team within 100 days of your purchase and we’ll pick up your purchase free of charge."
+  },
+  "footer": {
+    "about": "About",
+    "reviews": "Reviews",
+    "media-center": "Media center",
+    "jobs": "Jobs",
+    "dealer-store": "Dealer store",
+    "corporate-sales": "",
+    "my-account": "My account",
+    "contact-us": "Contact us",
+    "gift-cards": "",
+    "site-map": "Site map",
+    "privacy-policy": "Privacy policy",
+    "legal": "Legal",
+    "email-go": "Go",
+    "email-disclaimer": "Exclusive events and announcements. Not spam.",
+    "email-invalid": "A valid email address is required.",
+    "email-placeholder": "Enter Email Address"
+  },
+  "country-names": {
+    "australia": "Australia",
+    "belgium": "Belgium",
+    "canada": "Canada",
+    "china": "China",
+    "denmark": "Denmark",
+    "france": "France",
+    "germany": "Germany",
+    "italy": "Italy",
+    "mexico": "Mexico",
+    "netherlands": "Netherlands",
+    "norway": "Norway",
+    "spain": "Spain",
+    "sweden": "Sweden",
+    "united-kingdom": "United Kingdom",
+    "united-states": "United States",
+    "rest-of-europe": "Rest of Europe",
+    "rest-of-the-world": "Rest of the World"
+  },
+  "languages": {
+    "english": "English",
+    "french": "French",
+    "danish": "Danish",
+    "german": "German",
+    "italian": "Italian",
+    "spanish": "Spanish",
+    "dutch": "Dutch",
+    "swedish": "Swedish",
+    "norwegian": "Norwegian"
+  },
+  "hero": {
+    "header": "So Blue</br><span>it shows.</span>",
+    "paragraph": "Celebrate 75 years of Blue Note Records with the Sonos PLAY:1 Blue Note Limited Edition.",
+    "availability": "Available March 5 at 09:00</br>Exclusively on sonos.com for £220",
+    "button": "Shop Now",
+    "button-link": "http://www.sonos.com/en-gb/sonos-shop"
+  },
+  "year-seventyfive": {
+    "header": "Sonos and Blue Note.</br>It’s all about the music.",
+    "paragraph": "Passionate about music, and pioneers in sound, we’ve come together because we believe in creating a transcendent music experience. To celebrate our shared dedication, and to commemorate 75 years of Blue Note’s authentic sound and originality, we’ve created our first ever limited edition speaker - the Sonos PLAY:1 Blue Note Limited Edition."
+  },
+  "look-and-feel": {
+    "quote": "“Fidelity is true.</br><span>Give me the truth.</span>”",
+    "credit": "- DON WAS</br><span>BLUE NOTE RECORDS</span>",
+    "header": "A look inspired by sound.",
+    "paragraph": "Blue Note is the essence of jazz expression. Its name is a derivative of the “blue notes” used in jazz and blues, intentionally flat to reveal a song’s raw emotion. The Blue Note PLAY:1 captures this emotion with a custom-painted finish that expresses the dramatic fades and swells unique in every performance."
+  },
+  "close-up": {
+    "header": "Deep, powerful<br>and crystal clear.",
+    "paragraph": "With two custom-designed drivers and dedicated amps, the Blue Note PLAY:1 delivers sound with such precision, you will feel the nuances that define jazz. And with such simple set-up you’ll be streaming your music in no time."
+  },
+  "apps": {
+    "header": "Exclusive Access.",
+    "paragraph": "With the Blue Note PLAY:1, enjoy exclusive access to our Blue Note Artist Selects station, curated by legendary Blue Note artists and iconic producer Don Was. In addition, two other Blue Note stations streaming everything from the 101s to the deeper cuts, are yours at the tap of a finger.",
+    "image": "media/product/bluenote/phones/phone-english.png"
+  },
+  "art-blakey": {
+    "header": "“We’re here</br><span>to have a ball.”</span>",
+    "credit": "- Art Blakey"
+  }
+}

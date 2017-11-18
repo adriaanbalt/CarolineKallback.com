@@ -1,0 +1,34 @@
+{
+  "name": "Sonos-Blue-Note",
+  "description": "Sonos Blue Note website",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Adriaan Scholvinck <adriaan@balt.us>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriaanbalt/Sonos-Blue-Note.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "~0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-csslint": "^0.3.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-modernizr": "~0.3.0",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "assemble": "^0.4.42"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}

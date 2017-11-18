@@ -1,0 +1,107 @@
+<div class="section footer flush" id="footer">
+	<div class="row">
+		<div class="columns large-6 medium-6 small-12">
+			<div class="row">
+				<div class="small-12 columns">
+					<ul class="social-block">
+						<li><a href="http://www.sonos-studio.com/" title="Sonos Studio" class="button sonos-studio"><span>Sonos<br>studio</span></a>
+						</li>
+						<li><a href="https://www.twitter.com/sonos" target="_blank" title="Twitter" class="button"><span class="icon icon-twitter"></span></a>
+						</li>
+						<li><a href="http://www.facebook.com/sonos" target="_blank" title="Facebook" class="button"><span class="icon icon-facebook"></span></a>
+						</li>
+						<li><a href="http://www.instagram.com/sonos" target="_blank" title="Instagram" class="button"><span class="icon icon-instagram"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 columns">
+					<ul class="social-block">
+						<li><a href="https://plus.google.com/107670103958760496596" target="_blank" title="Google+" class="button"><span class="icon icon-gplus"></span></a>
+						</li>
+						<li><a href="http://www.pinterest.com/sonos/" target="_blank" title="Pinterest" class="button"><span class="icon icon-pinterest"></span></a>
+						</li>
+						<li><a href="http://www.linkedin.com/company/sonos-inc." target="_blank" title="LinkedIn" class="button"><span class="icon icon-linkedin"></span></a>
+						</li>
+						<li><a href="http://www.youtube.com/sonos" target="_blank" title="YouTube" class="button"><span class="icon icon-youtube-play"></span></a>
+						</li>
+						<li><a href="http://blog.sonos.com/" title="Sonos Blog" class="button blog"><span>Blog</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="large-6 medium-6 small-12 columns">
+			<div class="row">
+				<div class="small-12 columns">
+					<form data-abide="" data-options="validate_on_blur: false;" data-newsletter="" novalidate="novalidate">
+						<div class="row collapse">
+							<div class="small-10 columns">
+								<input type="email" placeholder="{{ footer.email-placeholder }}" required="">
+								<small class="error">{{ footer.email-invalid }}</small>
+							</div>
+							<div class="small-2 columns">
+								<button type="submit" data-reveal-id="newsletterModal" class="prefix">{{ footer.email-go }}</button>
+							</div>
+						</div>
+						<div id="newsletterModal" data-reveal="" class="reveal-modal medium">
+							<h2></h2><a class="close-reveal-modal"><span class="icon-x"></span></a>
+						</div>
+					</form>
+					<h6 class="primary">{{ footer.email-disclaimer }}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-12 small-6 columns">
+			<ul class="inline-list light sonos-links">
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/about">{{ footer.about }}</a>
+				</li>
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/reviews">{{ footer.review }}</a>
+				</li>
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/press">{{ footer.media-center }}</a>
+				</li>
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/jobs">{{ footer.jobs }}</a>
+				</li>
+				<li>
+					<a href="https://www.sonos.com/shop/login.aspx?dl=true">{{ footer.dealer-store }}</a>
+				</li>
+				{{#if footer.corporate-sales }}
+				<li>
+					<a href="http://www.sonos.com/epp/corporate">{{ footer.corporate-sales }}</a>
+				</li>
+				{{/if}}
+				<li>
+					<a href="https://www.sonos.com/myaccount">{{ footer.my-account }}</a>
+				</li>
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/contact">{{ footer.contact-us }}</a>
+				</li>
+				{{#if footer.gift-cards }}
+				<li>
+					<a href="http://www.sonos.com/giftcards">{{ footer.gift-cards }}</a>
+				</li>
+				{{/if}}
+			</ul>
+		</div>
+		<div class="large-12 small-6 columns">
+			<ul class="inline-list site-links">
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/sitemap">{{ footer.site-map }}</a>
+				</li>
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/legal/privacy">{{ footer.privacy-policy }}</a>
+				</li>
+				<li>
+					<a href="https://www.sonos.com/{{ lang-locale }}/legal/terms">{{ footer.legal }}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

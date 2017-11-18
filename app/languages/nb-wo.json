@@ -1,0 +1,137 @@
+{
+  "file-path": "http://archive.balt.us/sonos-bluenote/",
+  "lang-locale": "nb-wo",
+  "header": {
+    "direct-buy": {
+      "message": "",
+      "sales-help": {
+        "link-title": "Salgshjelp",
+        "dropdown": {
+          "speak-label": "Snakk med noen",
+          "speak-call-link": "Ring oss",
+          "info-label": "Generell informasjon",
+          "info-questions-link": "Vanlige spørsmål",
+          "info-video-demo": "Videodemonstrasjon",
+          "video-demo-id": "-J07MLOOTDY",
+          "order-label": "Bestillingsinfo",
+          "order-returns-link": "Retur og policyer"
+        }
+      }
+    },
+    "what-is-sonos": {
+      "link-title": "Hva er Sonos",
+      "dropdown": {
+        "system": "System",
+        "music": "Musikk",
+        "app": "App"
+      }
+    },
+    "product-overview": {
+      "link-title": "Produktoversikt",
+      "dropdown": {
+        "speakers": "Høyttalere",
+        "home-theater": "Hjemmekinoanlegg",
+        "components": "Komponenter"
+      }
+    },
+    "shop": {
+      "link-title": "Butikk",
+      "dropdown": {
+        "all-products-link": "Vis alle",
+        "speakers-label": "Trådløse høyttalere",
+        "play1": "PLAY:1",
+        "play3": "PLAY:3",
+        "play5": "PLAY:5",
+        "home-theater-label": "Trådløs hjemmekinoanlegg",
+        "playbar": "PLAYBAR",
+        "sub": "SUB",
+        "components-label": "Legg til eksisterende utstyr",
+        "connect-amp": "CONNECT:AMP",
+        "connect": "CONNECT"
+      }
+    },
+    "support": "Min support",
+    "language": "Språk",
+    "find-a-store": "Finn en butikk",
+    "sign-in": "Logg på",
+    "choose-your-language": "Choose Your Language"
+  },
+  "footer": {
+    "about": "Om",
+    "reviews": "Omtaler",
+    "media-center": "Mediasenter",
+    "jobs": "Jobber",
+    "dealer-store": "Forhandlerbutikk",
+    "corporate-sales": "",
+    "my-account": "Min konto",
+    "contact-us": "Kontakt oss",
+    "gift-cards": "",
+    "site-map": "Områdekart",
+    "privacy-policy": "Personvernerklæring",
+    "legal": "Juridisk",
+    "email-go": "Go",
+    "email-disclaimer": "Eksklusive hendelser og kunngjøringer Ingen søppelpost.",
+    "email-invalid": "Skriv inn en gyldig e-postadresse.",
+    "email-placeholder": "Skriv inn e-postadresse"
+  },
+  "country-names": {
+    "australia": "Australia",
+    "belgium": "Belgia",
+    "canada": "Canada",
+    "china": "Kina",
+    "denmark": "Danmark",
+    "france": "Frankrike",
+    "germany": "Tyskland",
+    "italy": "Italia",
+    "mexico": "Mexico",
+    "netherlands": "Nederland",
+    "norway": "Norge",
+    "spain": "Spania",
+    "sweden": "Sverige",
+    "united-kingdom": "Storbritannia",
+    "united-states": "USA",
+    "rest-of-europe": "Resten av Europa",
+    "rest-of-the-world": "Resten av Verden"
+  },
+  "languages": {
+    "english": "Engelsk",
+    "french": "Fransk",
+    "danish": "Dansk",
+    "german": "Tysk",
+    "italian": "Italiensk",
+    "spanish": "Spansk",
+    "dutch": "Hollandsk",
+    "swedish": "Svensk",
+    "norwegian": "Norsk"
+  },
+  "hero": {
+    "header": "Som skapt</br><span>for blåtoner.</span>",
+    "paragraph": "Feir Blue Note Records' 75-årsjubileum med Sonos PLAY:1 Blue Note Limited Edition.",
+    "availability": "Tilgjengelig fra 5. mars 10.00</br>Utelukkende på sonos.com for €250",
+    "button": "Kjøp nå",
+    "button-link": "http://www.sonos.com/nb-wo/sonos-shop"
+  },
+  "year-seventyfive": {
+    "header": "Sonos og Blue Note.</br>Alt handler om musikk.",
+    "paragraph": "Lidenskapelig opptatte av musikk og pionerer innen lyd, vi samarbeider fordi vi har fokus på å skape en musikkopplevelse som tar sansene til et helt nytt nivå. Blue Note feirer 75 år med autentisk lyd og originalitet, og vi feirer jubileet og vårt felles samarbeid med vår første Limited Edition-høyttaler noensinne – Sonos PLAY:1 Blue Note Limited Edition."
+  },
+  "look-and-feel": {
+    "quote": "“Fidelity is true.</br><span>Give me the truth.</span>”",
+    "credit": "- DON WAS</br><span>BLUE NOTE RECORDS</span>",
+    "header": "Utseende inspirert av lyd.",
+    "paragraph": "Blue Note er synonymt med følelsen av jazz og blues. Navnet kommer av de “triste tonene” (blue) som brukes i jazz og blues. De er nedtonet med hensikt, for å avsløre sangens rå følelser. Blue Note PLAY:1 fanger denne følelsen med en spesiallaget finish som uttrykker de dramatiske overgangene i hver unike fremføring."
+  },
+  "close-up": {
+    "header": "Dyp, kraftfull<br>og krystallklar.",
+    "paragraph": "Med to spesialdesignede drivere og dedikerte forsterkere, leverer Blue Note PLAY:1 lyd med en presisjon som levendegjør nyansene i jazz-musikk. Det enkle oppsettet gjør at du er klar til å streame musikk på rekordtid."
+  },
+  "apps": {
+    "header": "Eksklusiv tilgang.",
+    "paragraph": "Med Blue Note PLAY:1 får du eksklusiv tilgang til Blue Note Artist Selects-stasjonen, der musikken er utvalgt av legendariske Blue Note-artister og den ikoniske produsenten Don Was. I tillegg får du tilgang til to andre Blue Note-stasjoner som streamer alt fra de beste låtene til mer smale versjoner, med et tastetrykk.",
+    "image": "media/product/bluenote/phones/phone-norwegian.png"
+  },
+  "art-blakey": {
+    "header": "“We’re here</br><span>to have a ball.”</span>",
+    "credit": "- Art Blakey"
+  }
+}

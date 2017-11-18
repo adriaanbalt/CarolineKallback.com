@@ -1,0 +1,19 @@
+@mixin gradient( $startColor, $endColor, $left, $right ) {
+  background: rgb(0,191,242); /* Old browsers */
+  background: -moz-linear-gradient(left,  $startColor $left, $endColor $right); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop($left,$startColor), color-stop($right,$endColor)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  $startColor $left,$endColor $right); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  $startColor $left,$endColor $right); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  $startColor $left,$endColor $right); /* IE10+ */
+  background: linear-gradient(to right,  $startColor $left,$endColor $right); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='startColor', endColorstr='$endColor',GradientType=1 ); /* IE6-9 */
+}
+@mixin gradient-vertical( $startColor, $endColor, $top, $bottom ) {
+	background: -moz-linear-gradient(top,  $startColor $top, $endColor $bottom); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($top, $startColor), color-stop($bottom, $endColor)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $startColor $top, $endColor $bottom); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $startColor $top, $endColor $bottom); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $startColor $top, $endColor $bottom); /* IE10+ */
+	background: linear-gradient(to bottom,  $startColor $top, $endColor $bottom); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor',GradientType=0 ); /* IE6-9 */
+}
