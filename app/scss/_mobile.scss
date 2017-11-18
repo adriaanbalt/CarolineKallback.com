@@ -1,12 +1,16 @@
-.project {
-	position: relative;
-	float: left;
-	.anchor {
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
-	.overlay {
-		position: absolute;
+.project-list {
+	text-align: center;
+	.project {
+		position: relative;
+		display: inline-block;
+		margin: 1em;
+		.anchor {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.overlay {
+			position: absolute;
+		}
 	}
 }
