@@ -2,7 +2,7 @@ var paths = {
 	js: ['app/Assets/js/**/*.js'],
 	html: ['app/views/**/*.hbs'],
 	css: ['app/scss/mixins/*.scss', 'app/scss/*.scss'],
-	data: ['app/languages/**/*.json']
+	data: ['app/data/**/*.json']
 };
 
 module.exports = function(grunt) {
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
 					assets: '<%= directory.dist %>',
 					partials: ['<%= directory.app %>/views/partials/**/*.hbs'],
 					layout: ['<%= directory.app %>/views/layouts/default.hbs'],
-					data: ['<%= directory.app %>/languages/**/*.json'],
+					data: ['<%= directory.app %>/data/**/*.json'],
 					production: true,
 					pages: ['<%= directory.app %>/views/pages/**/*.hbs']
 				},

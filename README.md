@@ -3,6 +3,8 @@
 
 ###Introduction
 
+Caroline Kallback website.
+
 ### Node Modules
 
 * [Grunt](http://gruntjs.com/)

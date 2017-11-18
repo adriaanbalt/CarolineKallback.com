@@ -1,0 +1,10 @@
+<ul class="clearfix">
+{{#eachProperty projects}}
+	<li class="project">
+		<a href="{{this.value.path}}" class="anchor">
+		    <div class="overlay">{{this.value.title}}</div>
+		    <img src="{{this.value.thumbnail}}"/>
+		</a>
+	 </li>
+{{/eachProperty }}
+</ul>
