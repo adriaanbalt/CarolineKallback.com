@@ -1,20 +1,20 @@
 {
   "title": "project 01",
-  "description":"asdfasdgagag asdg adfs ",
+  "description":"desciprtion",
   "videos": {
     "001":{
       "title":"title-01",
-      "path":"url",
+      "videoid":"241923247",
       "thumbnail":"url"
     },
     "002":{
       "title":"title-02",
-      "path":"url",
+      "videoid":"241923146",
       "thumbnail":"url"
     },
     "003":{
       "title":"title-03",
-      "path":"url",
+      "videoid":"240703463",
       "thumbnail":"url"
     }
   }
